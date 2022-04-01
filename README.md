@@ -1,6 +1,7 @@
 # platzi-curso-practico-javascript
 Curso Práctico de JS de Platzi
-This is a test
+
+...
 
 ## Taller #1: figuras geométricas
 
