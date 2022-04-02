@@ -24,7 +24,7 @@ console.groupEnd();
 console.group("Triangulo")
 
 const perimetroTriangulo = (lado1, lado2, base) => {
-  return lado1 + lado2 + base;
+  return Number(lado1) + Number(lado2) + Number(base);
 }
 
 const areaTriangulo = (base, altura) => {
@@ -85,6 +85,7 @@ const areaCirculo = (radio) => {
 
 console.groupEnd();
 
+// Cuadrado
 function calcularPerimetroCuadrado() {
   const input = document.getElementById('lado');
   const value = input.value;
@@ -97,5 +98,39 @@ function calcularAreaCuadrado() {
   const value = input.value;
   const area = areaCuadrado(value);
   alert(area);
+}
 
+// Triangulo
+function calcularPerimetroTriangulo() {
+  const lado1 = document.getElementById('lado1').value;
+  const lado2 = document.getElementById('lado2').value;
+  const base = document.getElementById('base').value;
+  const perimetro = perimetroTriangulo(lado1, lado2, base);
+  alert(perimetro);
+}
+
+function calcularAreaTriangulo() {
+  const base = parseInt(document.getElementById('base').value);
+  const altura = parseInt(document.getElementById('altura').value);
+  const area = areaTriangulo(base, altura);
+  alert(area);
+}
+
+// Circulo
+
+function calcularDiametroCirculo() {
+  const radio = document.getElementById('radio').value;
+  const diametro = diametroCirculo(radio);
+  alert(diametro);
+}
+
+function calcularPerimetroCirculo() {
+  const radio = document.getElementById('radio').value;
+  const perimetro = perimetroCirculo(radio);
+  alert(perimetro);
+}
+function calcularAreaCirculo() {
+  const radio = document.getElementById('radio').value;
+  const area = areaCirculo(radio);
+  alert(area);
 }
