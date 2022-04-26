@@ -1,4 +1,4 @@
-# platzi-curso-practico-javascript
+# curso-practico-javascript
 Curso Práctico de JS de Platzi
 
 ...
